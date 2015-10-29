@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*	
+	http://mataskairaitis.com
+	Liftoff game css by Matas Kairaitis.
+*/
+
+h1 {
+	color:white;
+	font-size:40px;
+	text-align:center;
+	font-family:Source Sans Pro;
+	font-weight:bold;
+}
+
+a:link {
+	color:lightgrey;
+	text-decoration:none;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	transition:0.2s;
+}
+
+a:visited {
+	color:lightgrey;
+	text-decoration:none;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	transition:0.2s;
+}
+
+a:active {
+	color:lightgrey;
+	text-decoration:none;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	transition:0.2s;
+}
+
+a:hover {
+	color:#990000;
+}
+
+#page-background {
+	width:100%;
+	height:100%;
+	min-height:900px;
+	margin-top:-80px;
+	position:absolute;
+	z-index:-10;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#004570+0,005893+44,3888ea+100 */
+	background: #004570; /* Old browsers */
+	background: -moz-linear-gradient(top,  #004570 0%, #005893 44%, #3888ea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004570), color-stop(44%,#005893), color-stop(100%,#3888ea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #004570 0%,#005893 44%,#3888ea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #004570 0%,#005893 44%,#3888ea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #004570 0%,#005893 44%,#3888ea 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #004570 0%,#005893 44%,#3888ea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004570', endColorstr='#3888ea',GradientType=0 ); /* IE6-9 */
+}
+
+.header-container {
+	margin-top:20px;
+}
+
+#global-container {
+	text-align:center;
+	margin:auto;
+}
+
+#myCanvas {
+	margin:auto;
+	margin-top:80px;
+	text-align:center;
+	display:block;
+	transition:5s;
+	box-shadow:0 0 30px #004570 inset;
+}
+
+#menu-container {
+	transition:0.5s;
+}
+
+#menu {
+	position:absolute;
+	height:80%;
+	width:80%;
+	margin:10% 10% 10% 10%;
+}
+
+.button {
+	width:50%;
+	padding:7.5% 0 7.5% 0;
+	margin:0 25% 5% 25%;
+	background-color:blue;
+	border-radius:5%;
+	opacity:0.6;
+	cursor:pointer;
+	text-align:center;
+	font-size:1.2em;
+	font-family:Source Sans Pro;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4c4c4+0,d8d8d8+47,ffffff+100 */
+	background: #c4c4c4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c4c4c4 0%, #d8d8d8 47%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c4c4c4), color-stop(47%,#d8d8d8), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c4c4c4 0%,#d8d8d8 47%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c4c4c4 0%,#d8d8d8 47%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c4c4c4 0%,#d8d8d8 47%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c4c4c4 0%,#d8d8d8 47%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4c4c4', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.controls {
+	margin-top:10px;
+	text-align:center;
+	color:lightgrey;
+	font-family: Source Sans Pro;
+}
+
+.red {
+	color:black;
+	padding:0 5px 0 5px;
+	background-color: lightgrey;
+	border:1px solid lightgrey;
+	border-radius:5px;
+	font-weight:bold;
+}
+
+.gameTitle {
+	z-index:1;
+}
+
+#topScore {
+	background-color:#990000;
+	color:white;
+	width:120px;
+	margin:auto;
+	z-index:2;
+	text-align:center;
+	font-family:Source Sans Pro;
+}
+
+.social {
+	margin-top:20px;
+	text-align:center;
+	color:lightgrey;
+	font-family:Source Sans Pro;
+}
